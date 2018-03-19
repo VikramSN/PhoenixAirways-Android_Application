@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/aa"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/cart"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Upload Flight Details"
+                android:textColor="#fff"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/arn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Runway Name"
+                android:textColor="#fff"
+                android:textColorHint="#fff" >
+
+                <requestFocus />
+            </EditText>
+
+            <EditText
+                android:id="@+id/afn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="Flight Name"
+                android:textColor="#fff"
+                android:textColorHint="#fff" >
+
+                <requestFocus />
+            </EditText>
+
+            <EditText
+                android:id="@+id/afno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="Flight No."
+                android:textColor="#fff"
+                android:textColorHint="#fff" >
+
+                <requestFocus />
+            </EditText>
+
+            <EditText
+                android:id="@+id/afrom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="From"
+                android:textColor="#fff"
+                android:textColorHint="#fff" >
+
+                <requestFocus />
+            </EditText>
+
+            <EditText
+                android:id="@+id/ato"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="To"
+                android:textColor="#fff"
+                android:textColorHint="#fff" >
+
+                <requestFocus />
+            </EditText>
+
+            <EditText
+                android:id="@+id/adate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:clickable="true"
+                android:editable="false"
+                android:inputType="none"
+                android:ems="10"
+                android:hint="Date"
+                android:textColor="#fff"
+                android:textColorHint="#fff" >
+
+                <requestFocus />
+            </EditText>
+
+            <EditText
+                android:id="@+id/aat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="Arrival Time"
+                android:textColor="#fff"
+                android:textColorHint="#fff" 
+                android:inputType="date">
+				
+                <requestFocus />
+            </EditText>
+
+            <EditText
+                android:id="@+id/adt"
+                android:inputType="time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="Depature Time"
+                android:textColor="#fff"
+                android:textColorHint="#fff" >
+
+                <requestFocus />
+            </EditText>
+
+            <EditText
+                android:id="@+id/adu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="Duration"
+                android:textColor="#fff"
+                android:textColorHint="#fff" >
+
+                <requestFocus />
+            </EditText>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Business Seat"
+                android:textColor="#fff" />
+
+            <Spinner
+                android:id="@+id/absspinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Economic Seat"
+                android:textColor="#fff" />
+
+            <Spinner
+                android:id="@+id/aesspinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp" />
+
+            <EditText
+                android:id="@+id/abp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="Business Price"
+                android:inputType="numberSigned"
+                android:textColor="#fff"
+                android:textColorHint="#fff" >
+
+                <requestFocus />
+            </EditText>
+
+            <EditText
+                android:id="@+id/aep"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="Economic Price"
+                android:inputType="numberSigned"
+                android:textColor="#fff"
+                android:textColorHint="#fff" >
+
+                <requestFocus />
+            </EditText>
+
+            <Button
+                android:id="@+id/Psbtn"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/cart"
+                android:ems="4"
+                android:text="Submit"
+                android:textColor="#fff" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
